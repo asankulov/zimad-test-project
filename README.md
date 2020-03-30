@@ -1,9 +1,9 @@
 ## Description
-ZIMAD Test Project with Node.js, Express.js and MySQL
+#### ZIMAD Test Project with Node.js, Express.js and MySQL
 
-##Prerequisites
-1. installed node.js >= 10
-3. mysql database
+## Prerequisites
+* Installed Node.js >= 10
+* MySQL database
 
 ## Installation
 
@@ -13,7 +13,7 @@ $ npm install
 
 ## Running the app
 
-1. edit .env file from example by adding database credentials and so on
+1. edit `.env` file from example by adding database credentials and so on
 
 ```bash
 
