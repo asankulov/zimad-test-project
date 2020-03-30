@@ -1,0 +1,47 @@
+{
+  "name": "zimad-test-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "nodemon",
+    "format": "prettier --write \"src/**/*.js\" \"test/**/*.js\"",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mime-types": "^2.1.26",
+    "morgan": "^1.10.0",
+    "ms": "^2.1.2",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.5",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "faker": "^4.1.0",
+    "jest": "^25.2.4",
+    "node-mocks-http": "^1.8.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "rootDir": "test",
+    "testRegex": ".spec.js$",
+    "coverageDirectory": "./coverage",
+    "testEnvironment": "node"
+  }
+}
