@@ -11,7 +11,14 @@ module.exports = {
             id: fileId,
             userId,
           },
-          attributes: ["id", "originalName", "extension", "mimeType", "size", "path"]
+          attributes: [
+            "id",
+            "originalName",
+            "extension",
+            "mimeType",
+            "size",
+            "path",
+          ],
         });
         if (!existedFile) {
           return Promise.reject("File not found.");
@@ -20,12 +27,12 @@ module.exports = {
         existedFile.set(fileData);
         existedFile.save();
         return {
-          id: existedFile.get('id'),
-          originalName: existedFile.get('originalName'),
-          extension: existedFile.get('extension'),
-          mimeType: existedFile.get('mimeType'),
-          size: existedFile.get("size")
-        }
+          id: existedFile.get("id"),
+          originalName: existedFile.get("originalName"),
+          extension: existedFile.get("extension"),
+          mimeType: existedFile.get("mimeType"),
+          size: existedFile.get("size"),
+        };
       }
       const newFile = await File.create({
         userId,

@@ -1,7 +1,7 @@
-const path = require('path');
+const path = require("path");
 const multer = require("multer");
 const mime = require("mime-types");
-const config = require('../config');
+const config = require("../config");
 
 module.exports = multer({
   storage: multer.diskStorage({

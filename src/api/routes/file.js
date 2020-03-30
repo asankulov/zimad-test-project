@@ -4,7 +4,6 @@ const fileController = require("../controllers/file");
 const fileBodyValidator = require("../middlewares/fileBodyValidator");
 const listFilesQueryParamsValidator = require("../middlewares/listFilesQueryParamsValidator");
 
-
 router.post(
   "/",
   upload.single("file"),
